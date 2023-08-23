@@ -1,0 +1,220 @@
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+ pointer-events: none;
+  transition: 0.5s all;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.popup_opened{
+  pointer-events: all;
+  opacity: 1;
+  transition: 0.5s all;
+  z-index: 3;
+  }
+
+  .popup__close-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 1s;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../images/Close-Icon.svg);
+    padding: 0;
+    border: 0;
+    background-color: rgba(0,0,0,0);
+  }
+  .popup__close-icon:hover{
+    opacity: .6;
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width: 528px) {
+    .popup__close-icon{
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+    }
+  }
+
+
+  .popup__form{
+    position: relative;
+    width: 430px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+  }
+  
+  @media screen and (max-width: 528px) {
+    .popup__form{
+      max-width: 280px;
+    }
+  }
+
+
+  .popup__title {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 330px;
+    width: 100%;
+    margin-left: 36px;
+    margin-top: 34px;
+    margin-bottom: 0;
+  }
+  
+  @media screen and (max-width: 528px) {
+    .popup__title {
+      font-size: 18px;
+      line-height: 22px;
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 25px;
+    }
+  }
+
+
+  .popup__input-container {
+    position:relative;
+  }
+
+
+  .popup__input {
+    position: relative;
+    margin-left: 36px;
+    margin-top: 45px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    height: 25px;
+    max-width: 358px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  
+  
+  .popup__input::placeholder {
+    color:#C4C4C4;
+  }
+  .popup__input::-webkit-input-placeholder {
+    color: #C4C4C4;
+  }
+  .popup__input::-moz-placeholder {
+    color: #C4C4C4;
+  }
+  .popup__input:-moz-placeholder {
+    color: #C4C4C4;
+  }
+  .popup__input:-ms-input-placeholder {
+    color: #C4C4C4;
+  }
+  .popup__input:focus-visible {
+    outline: blue 1px solid;
+  }
+  
+  .popup__input:nth-child(2) {
+    margin-top: 25px;
+  }
+  
+  @media screen and (max-width: 528px) {
+    .popup__input {
+      max-width: 238px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 72px;
+    }
+  
+    .popup__input:nth-child(3) {
+      margin-top: 25px;
+    }
+  
+  }
+
+  .popup__button {
+    margin: 48px auto 37px auto;
+    width: 358px;
+    height: 50px;
+    background-color:#FF685B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: opacity 1s;
+    border: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  
+  .popup__button:hover {
+    opacity: .8;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 528px) {
+    .popup__button {
+      width: 238px;
+      margin: 40px auto 22px auto;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .popup__container{
+    width: 510px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  @media screen and (max-width: 528px) {
+    .popup__container{
+      width: 282px;
+      padding-top:38px;
+  }
+  }
+
+  .popup__button-container{
+    position: relative;
+    width: 100%;
+  }
+
+  .popup__error-message{
+    position: absolute;
+    color: #FF004C;
+    text-align: center;
+    font-size: 11px;
+    max-width: 410px;
+    min-height: 14px;
+    bottom: 40px;
+    width: 100%;
+  }

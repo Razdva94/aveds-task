@@ -1,0 +1,27 @@
+
+ [ {
+    "login": "user1",
+    "password": "password1",
+    "name": "John Doe"
+  },
+  {
+    "login": "user2",
+    "password": "password2",
+    "name": "Jane Smith"
+  },
+  {
+    "login": "user3",
+    "password": "password3",
+    "name": "Alex Johnson"
+  },
+  {
+    "login": "user4",
+    "password": "password4",
+    "name": "Emily Brown"
+  },
+  {
+    "login": "user5",
+    "password": "password5",
+    "name": "Michael Davis"
+  }
+ ]

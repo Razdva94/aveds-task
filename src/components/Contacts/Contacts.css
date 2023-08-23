@@ -1,0 +1,18 @@
+.contacts {
+  color: #252B42;
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  margin-top: 184px;
+  align-self: self-start;
+  margin-left: 195px;
+}
+
+@media screen and (max-width: 700px) {
+  .contacts{
+  margin-left: 5vw;
+  }
+}
